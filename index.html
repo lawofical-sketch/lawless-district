@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lawless District | DevvPlay Studio</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+<div class="brand">
+<img alt="DevvPlay Studio" src="devvplay-studio-logo.png"/>
+<span>DevvPlay Studio</span>
+</div>
+<nav class="desktop-nav">
+<a href="#calendario">Calendario</a><a href="#inicio">Inicio</a>
+<a href="#mundo">Mundo</a>
+<a href="#galeria">Galería</a>
+<a href="#noticias">Noticias</a>
+<a href="#financiamiento">Financiamiento</a>
+<a href="#descargar">Descargar</a>
+<a href="#requisitos">Requisitos</a></nav>
+<button class="download-small" onclick="scrollToSection('descargar')">
+            Descargar cliente
+        </button>
+<button aria-label="Abrir menú" class="menu-button" id="menuButton">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</header>
+<aside class="mobile-menu" id="mobileMenu">
+<a href="#calendario">Calendario</a><a href="#inicio">Inicio</a>
+<a href="#mundo">Mundo</a>
+<a href="#galeria">Galería</a>
+<a href="#noticias">Noticias</a>
+<a href="#financiamiento">Financiamiento</a>
+<a href="#descargar">Descargar</a>
+<a href="#requisitos">Requisitos</a></aside>
+<main class="hero" id="inicio">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<p class="eyebrow">OPEN WORLD SHOOTER · PLAYER ECONOMY · ONLINE TRADING</p>
+<h1>LAWLESS<br/>DISTRICT</h1>
+<p class="hero-description">Un mundo abierto multijugador de comercio, distritos y reputación. En desarrollo activo por DevvPlay Studio. Estreno oficial anunciado para el 2 de marzo de 2027.</p>
+<div class="hero-actions">
+<button class="primary-button" onclick="scrollToSection('descargar')">
+                    Descargar cliente
+                </button>
+<button class="secondary-button" onclick="scrollToSection('calendario')">Fechas importantes</button>
+</div>
+<div class="platforms">
+<span>Windows PC</span>
+<span>Beta privada</span>
+<span>Online multiplayer</span>
+</div>
+</div>
+<div class="version-card"><span>EN DESARROLLO</span><strong>02.03.2027</strong><p>Lanzamiento oficial · 2:00</p></div>
+</main>
+<section class="section schedule-section" id="calendario"><div class="section-heading"><span>Calendario oficial · DevvPlay Studio</span><h2>El camino hacia LAWLESS</h2><p>El proyecto continúa en desarrollo. Estamos trabajando en renderizado, optimización visual, escenarios y sistemas de juego.</p></div><div class="milestone-grid"><article class="milestone"><span class="milestone-tag">PRÓXIMO ESTRENO</span><h3>25 DIC · 2026</h3><h4>Presentación del tráiler oficial</h4><p>Primer avance cinematográfico del universo de Lawless District. El video todavía no está disponible.</p></article><article class="milestone"><span class="milestone-tag">PRÓXIMA PRUEBA</span><h3>01 ENE · 2027</h3><h4>Beta programada</h4><p>Fase beta prevista para pruebas del cliente, rendimiento y experiencia multijugador. Acceso sujeto a disponibilidad.</p></article><article class="milestone highlight"><span class="milestone-tag">LANZAMIENTO OFICIAL</span><h3>02 MAR · 2027</h3><h4>Estreno · 2:00</h4><p>Fecha anunciada para el lanzamiento oficial de Lawless District. Horario y detalles de acceso por confirmar.</p></article></div><div class="countdown-panel"><span>CUENTA REGRESIVA PARA EL LANZAMIENTO</span><div aria-live="off" class="countdown-numbers" id="countdown"><div><strong id="days">--</strong><small>DÍAS</small></div><div><strong id="hours">--</strong><small>HORAS</small></div><div><strong id="minutes">--</strong><small>MIN</small></div><div><strong id="seconds">--</strong><small>SEG</small></div></div><p>Referencia provisional: 2:00, hora del centro de México.</p></div></section>
+<section class="section world-section" id="mundo">
+<div class="world-content">
+<div>
+<span class="section-label">El mundo</span>
+<h2>Una ciudad dividida por comercio, reputación y control</h2>
+</div>
+<p>
+                Lawless District combina exploración urbana, combates entre jugadores,
+                zonas de riesgo, mercado interno, intercambio de objetos y progresión
+                por reputación. Cada jugador puede decidir si dominar por fuerza,
+                comercio o estrategia.
+            </p>
+</div>
+<div class="feature-row">
+<article>
+<span>01</span>
+<h3>Economía de jugadores</h3>
+<p>
+                    Compra, vende e intercambia recursos, armas, skins y objetos raros
+                    dentro de un mercado dinámico.
+                </p>
+</article>
+<article>
+<span>02</span>
+<h3>Zonas de riesgo</h3>
+<p>
+                    Cada distrito tiene niveles de peligro, recompensas especiales y
+                    puntos estratégicos para controlar.
+                </p>
+</article>
+<article>
+<span>03</span>
+<h3>Progresión urbana</h3>
+<p>
+                    Mejora tu reputación, desbloquea acceso a zonas exclusivas y crea
+                    tu propio camino dentro de la ciudad.
+                </p>
+</article>
+</div>
+</section>
+<section class="section gallery-section" id="galeria">
+<div class="section-heading">
+<span>Capturas</span>
+<h2>Galería oficial</h2>
+<p>
+                Primeras imágenes del mapa, zonas de comercio, distritos nocturnos
+                y puntos de encuentro.
+            </p>
+</div>
+<div class="gallery-grid">
+<button class="gallery-item" data-image="sector.png">
+<img alt="Distrito central" onerror="this.style.display='none';this.parentElement.classList.add('image-unavailable')" src="sector.png"/>
+<div>
+<h3>Distrito central</h3>
+<p>Zona principal de movimiento y comercio.</p>
+</div>
+</button>
+<button class="gallery-item" data-image="trade.png">
+<img alt="Mercado de jugadores" onerror="this.style.display='none';this.parentElement.classList.add('image-unavailable')" src="trade.png"/>
+<div>
+<h3>Mercado de jugadores</h3>
+<p>Área dedicada a trades y economía.</p>
+</div>
+</button>
+<button class="gallery-item" data-image="assets/screenshot-3.jpg">
+<img alt="Zona nocturna" onerror="this.style.display='none';this.parentElement.classList.add('image-unavailable')" src="assets/screenshot-3.jpg"/>
+<div>
+<h3>Zona nocturna</h3>
+<p>Calles peligrosas con recompensas altas.</p>
+</div>
+</button>
+<button class="gallery-item" data-image="city.png">
+<img alt="Sector industrial" onerror="this.style.display='none';this.parentElement.classList.add('image-unavailable')" src="city.png"/>
+<div>
+<h3>Sector industrial</h3>
+<p>Territorio abierto para enfrentamientos.</p>
+</div>
+</button>
+</div>
+</section>
+<div class="image-modal" id="imageModal">
+<button id="closeModal">×</button>
+<img alt="Vista ampliada" id="modalImage" src=""/>
+</div>
+<section class="section news-section" id="noticias">
+<div class="section-heading">
+<span>Actualizaciones</span>
+<h2>Noticias recientes</h2>
+<p>
+                Avances del desarrollo, mejoras del cliente y anuncios de la beta.
+            </p>
+</div>
+<div class="news-grid"><article class="news-card"><div><span>14 OCT · 2026</span><h3>Renderizado y optimización</h3><p>Continuamos trabajando en el renderizado, la ambientación y el rendimiento general del proyecto.</p></div></article><article class="news-card"><div><span>25 DIC · 2026</span><h3>Tráiler en preparación</h3><p>La presentación del tráiler oficial está programada para el 25 de diciembre.</p></div></article><article class="news-card"><div><span>01 ENE · 2027</span><h3>Próxima fase beta</h3><p>Pruebas previstas para el 1 de enero, sujetas al progreso del desarrollo.</p></div></article></div>
+</section>
+<section class="section sponsor-section" id="financiamiento">
+<div class="sponsor-panel">
+<div class="sponsor-content">
+<span class="section-label">Financiamiento e impulso</span>
+<h2>Proyecto impulsado por Ventiver Servicios</h2>
+<p>
+                    Lawless District cuenta con el apoyo e impulso de
+                    <strong>Ventiver Servicios</strong>, colaborador clave en el desarrollo
+                    y crecimiento del proyecto.
+                </p>
+<p>
+                    Agradecemos profundamente su confianza, respaldo y aportación para
+                    hacer posible la evolución de este juego. Su apoyo representa una parte
+                    importante del avance de DevvPlay Studio y de la construcción de esta
+                    experiencia online.
+                </p>
+<div class="sponsor-actions">
+<a class="sponsor-button primary-sponsor" href="https://ventiverservicios.github.io/index.html" target="_blank">
+                        Página oficial
+                    </a>
+<a class="sponsor-button secondary-sponsor" href="https://www.facebook.com/VentiverMX" target="_blank">
+                        Facebook oficial
+                    </a>
+</div>
+</div>
+<div class="sponsor-card">
+<span>Official Support</span>
+<h3>Ventiver Servicios</h3>
+<p>
+                    Colaborador de financiamiento, impulso y respaldo del proyecto.
+                </p>
+</div>
+</div>
+</section>
+<section class="section system-requirements-section" id="requisitos"><div class="section-heading"><span>Especificaciones técnicas</span><h2>Requisitos del sistema</h2><p>Prepara tu equipo para LAWLESS DISTRICT. Especificaciones preliminares, sujetas a cambios durante el desarrollo y la beta.</p></div><div class="spec-grid"><article class="spec-card"><span class="spec-tag">CONFIGURACIÓN BASE</span><h3>Requisitos mínimos</h3><dl><div><dt>Sistema operativo</dt><dd>Windows 11 · 64 bits</dd></div><div><dt>Procesador</dt><dd>AMD Ryzen 9</dd></div><div><dt>Tarjeta gráfica</dt><dd>NVIDIA RTX 5080 Ti*</dd></div><div><dt>Memoria RAM</dt><dd>34 GB</dd></div><div><dt>Almacenamiento</dt><dd>500 GB SSD</dd></div><div><dt>DirectX</dt><dd>Versión 12</dd></div><div><dt>Conexión</dt><dd>Internet estable</dd></div></dl></article><article class="spec-card spec-card-premium"><span class="spec-tag">EXPERIENCIA SUGERIDA</span><h3>Requisitos recomendados</h3><dl><div><dt>Sistema operativo</dt><dd>Windows 11 · 64 bits</dd></div><div><dt>Procesador</dt><dd>AMD Ryzen 9 9950X3D</dd></div><div><dt>Tarjeta gráfica</dt><dd>NVIDIA RTX 5090</dd></div><div><dt>Memoria RAM</dt><dd>64 GB DDR5</dd></div><div><dt>Almacenamiento</dt><dd>1 TB NVMe SSD</dd></div><div><dt>DirectX</dt><dd>Versión 12</dd></div><div><dt>Conexión</dt><dd>Fibra óptica</dd></div></dl></article></div><p class="spec-disclaimer">*RTX 5080 Ti: denominación indicada por el desarrollador, pendiente de confirmar como modelo comercial. Las especificaciones son objetivos preliminares; los requisitos recomendados son una propuesta y no se han validado con pruebas de rendimiento.</p></section><section class="download-section" id="descargar">
+<div class="download-panel">
+<div>
+<span class="section-label">Cliente oficial</span>
+<h2>Descarga Lawless District</h2>
+<p>Descarga el launcher de Lawless District para Windows. La beta está prevista para el 1 de enero de 2027 y el lanzamiento oficial para el 2 de marzo de 2027.</p>
+<div class="requirements">
+<div>
+<strong>Plataforma</strong>
+<span>Windows 10 / 11</span>
+</div>
+<div>
+<strong>Estado</strong>
+<span>En desarrollo</span>
+</div>
+<div>
+<strong>Versión</strong>
+<span>0.4.2</span>
+</div>
+</div>
+</div>
+<div class="download-box">
+<a class="client-button" download="lawless-launcher.exe" href="lawless-launcher.exe">Descargar launcher para Windows</a>
+<button class="launcher-button">
+                    Ver notas de versión
+                </button>
+<p>Descarga del launcher disponible. El juego y los servidores todavía están en desarrollo; el launcher actual puede no instalar o ejecutar el juego.</p>
+</div>
+</div>
+</section>
+<section class="section credits-section">
+<div class="section-heading">
+<span>Producción</span>
+<h2>Créditos del proyecto</h2>
+<p>Proyecto independiente creado, diseñado y programado por DevvPlay Studio, con impulso económico de Ventiver Servicios.</p>
+</div>
+<div class="credits-table"><div class="credit-line"><span>Creación y dirección del proyecto</span><strong>DevvPlay Studio</strong></div><div class="credit-line"><span>Diseño, desarrollo y programación</span><strong>DevvPlay Studio</strong></div><div class="credit-line"><span>Diseño visual, niveles e interfaz</span><strong>DevvPlay Studio</strong></div><div class="credit-line"><span>Financiamiento e impulso económico</span><strong>Ventiver Servicios</strong></div></div>
+</section>
+<footer class="site-footer">
+<div class="footer-top">
+<div>
+<img alt="DevvPlay Studio" src="devvplay-studio-logo.png"/>
+<h3>DevvPlay Studio</h3>
+<p>
+                    Estudio independiente dedicado al desarrollo de experiencias
+                    online, mundos abiertos y sistemas de economía entre jugadores.
+                </p>
+</div>
+<div>
+<h4>Juego</h4>
+<a href="#inicio">Inicio</a>
+<a href="#galeria">Galería</a>
+<a href="#financiamiento">Financiamiento</a>
+<a href="#descargar">Descargar</a>
+</div>
+<div>
+<h4>Legal</h4>
+</div>
+<div>
+<h4>Canales oficiales</h4>
+<div class="social-links">
+</div>
+</div>
+<div>
+<h4>Impulso</h4>
+<a href="https://ventiverservicios.github.io/index.html" target="_blank">Ventiver Servicios</a>
+<a href="https://www.facebook.com/VentiverMX" target="_blank">Facebook Ventiver</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 DevvPlay Studio. Todos los derechos reservados.</p>
+<p>Lawless District es un proyecto en desarrollo. Con apoyo de Ventiver Servicios.</p>
+</div>
+</footer>
+<div class="custom-popup" id="customPopup">
+<div class="custom-popup-box">
+<button class="custom-popup-close" id="customPopupClose">×</button>
+<div class="popup-pulse-icon">
+<span>!</span>
+</div>
+<h3 id="customPopupTitle">Aviso del sistema</h3>
+<p id="customPopupMessage">
+                Mensaje de la página.
+            </p>
+<button class="custom-popup-button" id="customPopupButton">
+                Entendido
+            </button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
